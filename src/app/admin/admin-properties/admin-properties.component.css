@@ -1,0 +1,18 @@
+.mright {
+  margin-right: 5px;
+}
+
+.photos {
+  margin-left: -4px;
+  margin-bottom: 15px;
+  margin-top: -5px;
+}
+.deletPhoto {
+  top:0;
+  right:0;
+  cursor: pointer;
+}
+
+.deletePhoto i {
+  font-size: 20px;
+}
