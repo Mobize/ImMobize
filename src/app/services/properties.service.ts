@@ -88,4 +88,19 @@ export class PropertiesService {
       );
     }
   }
+
+  getSingleProperty(id: number) {
+    return new Promise(
+      (resole, reject) => {
+        firebase.database().ref('/properties/' + id).once('value').then(
+          (data) => {
+            resole(data.val());
+          },
+          (error) => {
+            reject(error);
+          }
+        );
+      }
+    );
+  }
 }

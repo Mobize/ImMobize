@@ -4,6 +4,7 @@ export class Property {
       public category: string,
       public surface: string,
       public rooms: string,
+      public price: string,
       public photos: any[],
       public description ?: string ) {}
 }
