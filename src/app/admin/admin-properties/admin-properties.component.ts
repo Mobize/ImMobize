@@ -116,6 +116,9 @@ export class AdminPropertiesComponent implements OnInit, OnDestroy {
   }
 
   onAddPhoto(url: string) {
+    if (this.photosAdded === undefined) {
+      this.photosAdded = [];
+    }
     this.photosAdded.push(url);
   }
 
@@ -124,4 +127,5 @@ export class AdminPropertiesComponent implements OnInit, OnDestroy {
     this.photosAdded.splice(id, 1);
     console.log(this.photosAdded);
   }
+
 }

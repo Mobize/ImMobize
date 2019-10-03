@@ -67,9 +67,9 @@
             <small class="text-success" *ngIf="photoUploaded">chargé</small>
           </div>
           <div class="row photos">
-            <div *ngFor="let photo of photosAdded; let i = index" class="col-4 position-relative border border-secondary rounded m-1 p-1 bg-light">
+            <div *ngFor="let photo of photosAdded; let i = index" class="col-4 position-relative shadow border border-secondary rounded m-1 p-1 bg-light">
               <span class="text-danger position-absolute deletePhoto mr-1" (click)="onRemoveAddedPhoto(i)"><i class="fa fa-times"></i></span>
-              <img [src]="photo" alt="photo" class="w-100">
+              <img [src]="photo" alt="photo" class="w-100 h100">
             </div>
           </div>
           <div class="form-group">

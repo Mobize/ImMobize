@@ -16,3 +16,11 @@
 .deletePhoto i {
   font-size: 20px;
 }
+
+.border-secondary {
+  border-color: white !important;
+}
+
+.h100 {
+  height: 100px;
+}
